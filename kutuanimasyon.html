@@ -1,0 +1,89 @@
+<html>
+<head>
+<title></title>
+
+<script type="text/javascript">
+
+var artir = 1;
+
+setInterval(function(){
+degistir(artir);
+		if(artir==4){
+		artir=1;
+		}else{
+		artir++;
+		}
+},3000);
+
+function  degistir(counter){
+
+var kutu = document.getElementById("kutu")
+kutu.style.marginTop = "40px";
+
+if(counter == 1){
+kutu.innerHTML = "Girmekten Korktuğun Marmara Aradığın Hazineyi Saklıyor</br> JOSEPH CAMPBELL";
+kutu.style.background = "#F4FA58";
+kutu.style.textAlign = "center";
+}else
+
+if(counter == 2){
+kutu.innerHTML = "Karanlıkta Gölgen Bile Seni Yanlız Bırakır</br>";
+kutu.style.background = "#B4045F";
+kutu.style.textAlign = "center";
+}else
+
+if(counter == 3){
+kutu.innerHTML = "Ne Giydiğin Önemi Yok, Çalış, İşine Bak.. </br> Steve JOBS";
+kutu.style.background = "#01DF01";
+kutu.style.textAlign = "center";
+}else
+
+if(counter == 4){
+kutu.innerHTML = "Çağamızın Altın Kalpi BULUT</br>Yasin Elüstü";
+kutu.style.background = "#F78181";
+kutu.style.textAlign = "center";
+}
+
+}
+
+</script>
+
+<style type="text/css">
+
+body{
+
+
+}
+
+
+#kutu{
+width:500px; 
+height:200px;
+border:2px solid #ddd;
+font-size: 20px;
+padding:20px; 
+position: relative;
+margin: auto;
+margin-top: 40px;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<div id="kutu">
+
+
+
+</div>
+
+
+
+
+</body>
+
+</html>
